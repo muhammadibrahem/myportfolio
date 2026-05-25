@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal portfolio of Muhammad Ibrahim — a frontend developer crafting modern web experiences with HTML, CSS & JavaScript.">
+        <meta name="keywords" content="frontend developer, web developer, portfolio, JavaScript, HTML, CSS, Muhammad Ibrahim">
+        <meta name="author" content="Muhammad Ibrahim">
+        <meta property="og:title" content="Muhammad Ibrahim — Frontend Developer">
+        <meta property="og:description" content="Crafting modern, elegant web experiences with HTML, CSS & JavaScript.">
+        <meta property="og:type" content="website">
+        <title>Muhammad Ibrahim — Frontend Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div id="preloader" aria-hidden="true">
+            <div class="preloader-inner">
+                <div class="preloader-logo">MI</div>
+                <div class="preloader-bar">
+                    <div class="preloader-fill"></div>
+                </div>
+                <div class="preloader-text">Loading Experience…</div>
+            </div>
+        </div>
+        <!-- Custom Cursor -->
+        <div id="cursor" aria-hidden="true"></div>
+        <div id="cursor-follower" aria-hidden="true"></div>
+        <!-- Back to Top -->
+        <button id="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <!-- Navbar -->
+        <header id="navbar" role="banner">
+            <nav class="nav-container" aria-label="Main navigation">
+                <a href="#hero" class="nav-logo" aria-label="Muhammad Ibrahim Home">MI</a>
+                <ul class="nav-links" role="list">
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#achievements" class="nav-link">Awards</a>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muibraheem662@gmail.com" target="_blank" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                    <a href="#contact" class="btn-hire" aria-label="Hire Me">Hire Me</a>
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+                <ul>
+                    <li>
+                        <a href="#about" class="mobile-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="mobile-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="mobile-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="mobile-link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#achievements" class="mobile-link">Awards</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="mobile-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <!-- ====== HERO ====== -->
+            <section id="hero" aria-label="Hero section">
+                <div class="hero-bg-grid" aria-hidden="true"></div>
+                <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+                <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+                <div class="hero-content reveal-hero">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for Work
+                    </div>
+                    <h1 class="hero-name">
+                        Muhammad
+                        <em>Ibrahim</em>
+                    </h1>
+                    <div class="hero-title-row">
+                        <span class="hero-prefix">I</span>
+                        <span class="typing-wrapper">
+                            <span id="typing-text" aria-live="polite"></span>
+                            <span class="cursor-blink" aria-hidden="true">|</span>
+                        </span>
+                    </div>
+                    <p class="hero-desc">Crafting pixel-perfect digital experiences where design meets performance — one elegant line of code at a time.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">
+                            View Projects
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn-outline">Hire Me</a>
+                        <a
+                            href="#"
+                            class="btn-resume"
+                            download
+                            aria-label="Download Resume"
+                        >
+                            <i class="fas fa-download"></i>
+                            Resume
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="12">0</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="4">0</span>
+                            <span class="stat-label">Semesters Done</span>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="3">0</span>
+                            <span class="stat-label">Tech Stacks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrap reveal-hero-img">
+                    <div class="hero-image-glow" aria-hidden="true"></div>
+                    <div class="hero-image-ring" aria-hidden="true"></div>
+                    <img
+                        src="photo.jpeg"
+                        alt="Muhammad Ibrahim — Frontend Developer"
+                        class="hero-photo"
+                        loading="eager"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                    >
+                    <div class="hero-photo-placeholder" style="display:none" aria-hidden="true">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="hero-image-badge" aria-label="Frontend Developer badge">
+                        <i class="fas fa-code"></i>
+                        Frontend Developer
+                    </div>
+                </div>
+                <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span>Scroll</span>
+                </a>
+            </section>
+            <!-- ====== ABOUT ====== -->
+            <section id="about" aria-labelledby="about-heading">
+                <div class="container">
+                    <div class="section-label reveal">About Me</div>
+                    <h2 id="about-heading" class="section-title reveal">
+                        The Story
+                        <em>Behind</em>
+                        the Code
+                    </h2>
+                    <div class="about-grid">
+                        <div class="about-image-col reveal">
+                            <div class="about-img-frame">
+                                <img
+                                    src="photo.jpeg"
+                                    alt="Muhammad Ibrahim portrait"
+                                    class="about-photo"
+                                    loading="lazy"
+                                    onerror="this.style.display='none';this.parentElement.querySelector('.about-photo-ph').style.display='flex'"
+                                >
+                                <div class="about-photo-ph" style="display:none">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="about-img-accent" aria-hidden="true"></div>
+                            </div>
+                            <div class="about-quick-info">
+                                <div class="info-chip">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Lahore, Pakistan
+                                </div>
+                                <div class="info-chip">
+                                    <i class="fas fa-briefcase"></i>
+                                    Open to Remote
+                                </div>
+                                <div class="info-chip">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    CS — 4th Semester
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-text-col">
+                            <p class="about-intro reveal">
+                                Hi, I'm
+                                <strong>Muhammad Ibrahim</strong>
+                                — a passionate frontend developer who turns ideas into beautiful, functional web experiences.
+                            </p>
+                            <p class="about-body reveal">I'm currently in my 4th semester of Computer Science, and I've spent that time building real projects — not just studying. From weather apps and drawing tools to movie finders and restaurant UIs, I love learning by doing.</p>
+                            <p class="about-body reveal">My stack is the classic trio: HTML, CSS, and JavaScript. I believe you should master the fundamentals before anything else, and that's exactly what I'm doing — one project at a time.</p>
+                            <p class="about-body reveal">I'm always looking to improve, collaborate, and take on new challenges. If you have an idea or opportunity, let's talk.</p>
+                            <div class="about-cta reveal">
+                                <a href="#contact" class="btn-primary">
+                                    Let's Connect
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#projects" class="btn-text">
+                                    See My Work
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== SKILLS ====== -->
+            <section id="skills" aria-labelledby="skills-heading">
+                <div class="container">
+                    <div class="section-label reveal">Skills</div>
+                    <h2 id="skills-heading" class="section-title reveal">
+                        Technical
+                        <em>Arsenal</em>
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-card reveal" data-delay="0">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML5</h3>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="95">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <span class="skill-pct">95%</span>
+                        </div>
+                        <div class="skill-card reveal" data-delay="1">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS3 / Sass</h3>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="90">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="skill-card reveal" data-delay="2">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="88">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                        <div class="skill-card reveal" data-delay="3">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3>React.js</h3>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="85">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <div class="skill-card reveal" data-delay="4">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h3>Node.js</h3>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="75">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <span class="skill-pct">75%</span>
+                        </div>
+                        <div class="skill-card reveal" data-delay="5">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h3>Git & GitHub</h3>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="92">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                        <div class="skill-card reveal" data-delay="6">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <h3>Figma / UI</h3>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="80">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="skill-card reveal" data-delay="7">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>SQL / NoSQL</h3>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="70">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                            <span class="skill-pct">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== PROJECTS ====== -->
+            <section id="projects" aria-labelledby="projects-heading">
+                <div class="container">
+                    <div class="section-label reveal">Projects</div>
+                    <h2 id="projects-heading" class="section-title reveal">
+                        Featured
+                        <em>Work</em>
+                    </h2>
+                    <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="app">App</button>
+                        <button class="filter-btn" data-filter="ui">UI/UX</button>
+                    </div>
+                    <div class="projects-grid" id="projects-grid">
+                        <article class="project-card reveal" data-category="web" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph web-ph">
+                                    <i class="fas fa-cloud-sun"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="0" aria-label="View details for Weather App">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Weather App</h3>
+                                <p class="project-desc">Real-time weather forecasting app using the OpenWeather API. Search any city for current conditions, temperature, humidity, and wind speed.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://weatharaapp.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github" href="https://github.com/muhammadibrahem/Weather-App"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="web" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph app-ph">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="1" aria-label="View details for Password Generator">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Password Generator</h3>
+                                <p class="project-desc">Secure password generator with customizable length and character options — uppercase, lowercase, numbers, and symbols. One-click copy to clipboard.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://passwogenerate.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt" href="https://github.com/muhammadibrahem"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github" href="https://github.com/muhammadibrahem"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="ui" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph ui-ph">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="2" aria-label="View details for Drawing App">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">Canvas</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Drawing App</h3>
+                                <p class="project-desc">A browser-based drawing canvas with brush size control, color picker, eraser tool, and clear/save functionality built with HTML5 Canvas API.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://drawingaapp.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt" href="https://github.com/muhammadibrahem"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github" href="https://github.com/muhammadibrahem"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="web" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph web2-ph">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="3" aria-label="View details for GitHub Profile Finder">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">GitHub API</span>
+                                </div>
+                                <h3 class="project-title">GitHub Profile Finder</h3>
+                                <p class="project-desc">Search any GitHub username and instantly display profile info, public repos, followers, and following count using the GitHub REST API.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt" href="https://github.com/muhammadibrahem"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github" href="https://github.com/muhammadibrahem "></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="web" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph app2-ph">
+                                    <i class="fas fa-film"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="4" aria-label="View details for Movie App">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">TMDB API</span>
+                                </div>
+                                <h3 class="project-title">Movie App</h3>
+                                <p class="project-desc">Browse trending movies, search by title, and view ratings, overviews, and posters — all powered by The Movie Database (TMDB) API.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="app" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph ui2-ph">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="5" aria-label="View details for To-Do List">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">To-Do List</h3>
+                                <p class="project-desc">A clean task management app with add, complete, delete, and localStorage persistence so your tasks survive a page refresh.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="app" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph web-ph">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="6" aria-label="View details for Tic Tac Game">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Tic Tac Game</h3>
+                                <p class="project-desc">Classic two-player Tic Tac Toe with win detection, draw detection, score tracking, and a restart button. Clean and responsive layout.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="ui" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph app-ph">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="7" aria-label="View details for Restaurant App">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Restaurant App</h3>
+                                <p class="project-desc">A stylish restaurant landing page with menu display, category filtering, and a dynamic cart system for a seamless food ordering experience.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="app" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph ui2-ph">
+                                    <i class="fas fa-sticky-note"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="8" aria-label="View details for Notes App">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Notes App</h3>
+                                <p class="project-desc">A minimal note-taking app with create, edit, delete, and search functionality. Notes are saved to localStorage so they persist between sessions.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="app" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph web2-ph">
+                                    <i class="fas fa-hourglass-half"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="9" aria-label="View details for Countdown Timer App">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Countdown Timer App</h3>
+                                <p class="project-desc">Set a custom countdown timer with start, pause, and reset controls. Features a visual progress ring and audio alert when the timer reaches zero.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="app" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph app2-ph">
+                                    <i class="fas fa-dice"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="10" aria-label="View details for Guess Number App">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Guess Number App</h3>
+                                <p class="project-desc">A number guessing game where the computer picks a random number and you get hints (too high / too low) until you guess correctly. Tracks attempts.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card reveal" data-category="ui" role="article">
+                            <div class="project-img-wrap">
+                                <div class="project-img-ph ui-ph">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <button class="project-modal-btn" data-id="11" aria-label="View details for Login Page">View Details</button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-title">Login Page</h3>
+                                <p class="project-desc">A sleek, modern login and signup UI with form validation, password visibility toggle, and smooth transition animations between forms.</p>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live
+                                    </a>
+                                    <a
+                                        href="https://github.com/muhammadibrahem"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn-project-outline"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Modal -->
+            <div
+                id="project-modal"
+                class="modal-overlay"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="modal-title"
+                aria-hidden="true"
+            >
+                <div class="modal-box">
+                    <button class="modal-close" id="modal-close" aria-label="Close modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-img-wrap">
+                        <div class="modal-img-ph" id="modal-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <h3 id="modal-title" class="modal-title"></h3>
+                        <p id="modal-desc" class="modal-desc"></p>
+                        <div id="modal-tags" class="modal-tags"></div>
+                        <div id="modal-features" class="modal-features"></div>
+                        <div class="modal-actions">
+                            <a href="#" class="btn-primary" id="modal-live">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn-outline" id="modal-code">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ====== EXPERIENCE ====== -->
+            <section id="experience" aria-labelledby="exp-heading">
+                <div class="container">
+                    <div class="section-label reveal">Journey</div>
+                    <h2 id="exp-heading" class="section-title reveal">
+                        Experience
+                        <em>&</em>
+                        Education
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-item reveal" data-side="left">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2023 — Present</span>
+                                    <span class="timeline-badge work">Work</span>
+                                </div>
+                                <h3>Senior Frontend Developer</h3>
+                                <h4>TechNova Solutions</h4>
+                                <p>Leading frontend architecture for SaaS products, mentoring junior developers, and driving the adoption of modern React patterns and design systems.</p>
+                                <ul class="timeline-achievements">
+                                    <li>Reduced app load time by 40% via code splitting</li>
+                                    <li>Built reusable component library used across 5 products</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal" data-side="right">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2022 — 2023</span>
+                                    <span class="timeline-badge work">Work</span>
+                                </div>
+                                <h3>Frontend Developer</h3>
+                                <h4>PixelCraft Studio</h4>
+                                <p>Built responsive web applications and interactive UIs for clients in fintech and e-commerce sectors using React, Next.js, and TypeScript.</p>
+                                <ul class="timeline-achievements">
+                                    <li>Delivered 12+ client projects on time</li>
+                                    <li>Integrated Stripe & PayPal payment flows</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal" data-side="left">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2021 — 2022</span>
+                                    <span class="timeline-badge intern">Internship</span>
+                                </div>
+                                <h3>UI/UX Developer Intern</h3>
+                                <h4>Digital Bloom Agency</h4>
+                                <p>Assisted in designing and developing landing pages, email templates, and interactive prototypes for digital marketing campaigns.</p>
+                                <ul class="timeline-achievements">
+                                    <li>Increased landing page conversion by 18%</li>
+                                    <li>Launched A/B test framework from scratch</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal" data-side="right">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2024 — 2028</span>
+                                    <span class="timeline-badge edu">Education</span>
+                                </div>
+                                <h3>BSc Computer Science</h3>
+                                <h4>University of Education, Lahore</h4>
+                                <p> specializing in Human-Computer Interaction and Software Engineering. Capstone project: adaptive learning platform.</p>
+                                <ul class="timeline-achievements">
+                                    <li>Dean's List — 3 consecutive semesters</li>
+                                    <li>Led university web development club</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== TESTIMONIALS ====== -->
+            <section id="testimonials" aria-labelledby="test-heading">
+                <div class="container">
+                    <div class="section-label reveal">Testimonials</div>
+                    <h2 id="test-heading" class="section-title reveal">
+                        What People
+                        <em>Say</em>
+                    </h2>
+                    <div class="testimonials-slider" role="region" aria-label="Testimonials">
+                        <div class="testimonials-track" id="testimonials-track">
+                            <div class="testimonial-card" role="article">
+                                <div class="testimonial-quote" aria-hidden="true">"</div>
+                                <p class="testimonial-text">Alex delivered our redesign flawlessly — ahead of schedule and exceeding every expectation. The attention to detail and performance optimization was remarkable.</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">
+                                        <span>SR</span>
+                                    </div>
+                                    <div>
+                                        <strong>Sarah Reynolds</strong>
+                                        <span>CEO, FinTrack Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-card" role="article">
+                                <div class="testimonial-quote" aria-hidden="true">"</div>
+                                <p class="testimonial-text">Rarely do you find a developer who understands both code and design so fluently. Alex built our product UI from scratch and it's now our biggest competitive advantage.</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">
+                                        <span>MK</span>
+                                    </div>
+                                    <div>
+                                        <strong>Marcus Kim</strong>
+                                        <span>CTO, TaskFlow</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-card" role="article">
+                                <div class="testimonial-quote" aria-hidden="true">"</div>
+                                <p class="testimonial-text">Our e-commerce conversion rate increased by 32% after Alex revamped the frontend. Professional, communicative, and incredibly talented.</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">
+                                        <span>LA</span>
+                                    </div>
+                                    <div>
+                                        <strong>Layla Ahmed</strong>
+                                        <span>Founder, ShopSphere</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-card" role="article">
+                                <div class="testimonial-quote" aria-hidden="true">"</div>
+                                <p class="testimonial-text">Alex's work on our design system saved our team hundreds of hours. The documentation, the components, the accessibility — all top tier.</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">
+                                        <span>JP</span>
+                                    </div>
+                                    <div>
+                                        <strong>James Parker</strong>
+                                        <span>Design Lead, Lumina</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-controls" aria-label="Slider controls">
+                            <button class="slider-btn" id="slider-prev" aria-label="Previous testimonial">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div
+                                class="slider-dots"
+                                id="slider-dots"
+                                role="tablist"
+                                aria-label="Testimonial navigation"
+                            ></div>
+                            <button class="slider-btn" id="slider-next" aria-label="Next testimonial">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== CONTACT ====== -->
+            <section id="contact" aria-labelledby="contact-heading">
+                <div class="container">
+                    <div class="section-label reveal">Contact</div>
+                    <h2 id="contact-heading" class="section-title reveal">
+                        Let's
+                        <em>Build</em>
+                        Together
+                    </h2>
+                    <div class="contact-grid">
+                        <div class="contact-info reveal">
+                            <p class="contact-intro">Have a project in mind or just want to chat? I'm always open to new opportunities and collaborations.</p>
+                            <div class="contact-details">
+                                <a href="mailto:alex@example.com" class="contact-item" aria-label="Email Alex">
+                                    <div class="contact-item-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Email</strong>
+                                        <span>muibraheem662@gmail.com</span>
+                                    </div>
+                                </a>
+                                <a href="tel:+923309245704" class="contact-item" aria-label="Call Alex">
+                                    <div class="contact-item-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Phone</strong>
+                                        <span>+92 329 590 3716</span>
+                                    </div>
+                                </a>
+                                <div class="contact-item">
+                                    <div class="contact-item-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Location</strong>
+                                        <span>Lahore, Pakistan</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-social">
+                                <a href="https://github.com/muhammadibrahem" aria-label="GitHub profile" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/muhammad-ibrahim-3a3673318/" aria-label="LinkedIn profile" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" aria-label="Twitter profile" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <form
+                            class="contact-form reveal"
+                            id="contact-form"
+                            novalidate
+                            aria-label="Contact form"
+                        >
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your full name"
+                                    required
+                                    aria-required="true"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    required
+                                    aria-required="true"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Project inquiry"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Tell me about your project…"
+                                    required
+                                    aria-required="true"
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary btn-full" aria-label="Send message">
+                                Send Message
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <div
+                                class="form-success"
+                                id="form-success"
+                                role="alert"
+                                aria-live="polite"
+                            >
+                                <i class="fas fa-check-circle"></i>
+                                Message sent! I'll be in touch soon.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- ====== FOOTER ====== -->
+        <footer id="footer" role="contentinfo">
+            <div class="footer-container">
+                <div class="footer-logo">MI</div>
+                <p class="footer-tagline">Crafting the web, one pixel at a time.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/muhammadibrahem" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-ibrahim-3a3673318/" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="footer-copy">© 2026 Alex Morgan. All rights reserved. Built with ♥ and pure code.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

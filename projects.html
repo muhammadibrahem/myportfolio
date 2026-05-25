@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projects by Muhammad Ibrahim — 13 real web projects built with HTML, CSS &amp; JavaScript.">
+        <title>Projects — Muhammad Ibrahim</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button id="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <header id="navbar">
+            <nav class="nav-inner">
+                <a href="index.html" class="nav-logo">MI</a>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="skills.html" class="nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="experience.html" class="nav-link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-right">
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <i id="theme-icon" class="fas fa-sun"></i>
+                    </button>
+                    <a href="index.html#contact" class="btn-hire">Hire Me</a>
+                    <button
+                        class="hamburger"
+                        id="hamburger"
+                        aria-label="Menu"
+                        aria-expanded="false"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="index.html" class="mobile-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="mobile-link">About</a>
+                    </li>
+                    <li>
+                        <a href="skills.html" class="mobile-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="mobile-link active">Projects</a>
+                    </li>
+                    <li>
+                        <a href="experience.html" class="mobile-link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact" class="mobile-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <!-- PAGE HEADER -->
+            <div class="page-header" style="background:var(--bg-2);">
+                <div class="container">
+                    <p class="section-eyebrow reveal">Projects</p>
+                    <h1 class="section-title reveal">Real
+                        <em>Work,</em> Real Learning
+                    </h1>
+                    <p class="section-desc reveal">13 projects built with pure HTML, CSS &amp; JavaScript. Each one taught me something new.</p>
+                </div>
+                <div style="position:absolute;top:-10%;left:-5%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,169,110,0.12),transparent 70%);filter:blur(60px);pointer-events:none;" aria-hidden="true"></div>
+            </div>
+            <!-- PROJECTS -->
+            <div class="projects-wrap" style="background:var(--bg);padding-top:60px;">
+                <div class="container">
+                    <!-- Filter -->
+                    <div class="filter-bar reveal">
+                        <button class="filter-btn active" data-filter="all">All (13)</button>
+                        <button class="filter-btn" data-filter="web">Web Apps</button>
+                        <button class="filter-btn" data-filter="game">Games</button>
+                        <button class="filter-btn" data-filter="ui">UI / Design</button>
+                        <button class="filter-btn" data-filter="tool">Tools</button>
+                    </div>
+                    <div class="projects-grid">
+                        <!-- 0: Weather App -->
+                        <article class="project-card reveal" data-cat="web" data-delay="1">
+                            <div class="project-thumb th-1">
+                                <i class="fas fa-cloud-sun"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://weatharaapp.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="0">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                    <span class="tag">API</span>
+                                </div>
+                                <h3 class="project-title">Weather App</h3>
+                                <p class="project-desc">Real-time weather for any city using the OpenWeather API — temperature, humidity, wind speed.</p>
+                            </div>
+                        </article>
+                        <!-- 1: Password Generator -->
+                        <article class="project-card reveal" data-cat="tool" data-delay="2">
+                            <div class="project-thumb th-2">
+                                <i class="fas fa-key"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://passwogenerate.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="1">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                                <h3 class="project-title">Password Generator</h3>
+                                <p class="project-desc">Secure password generator with custom length, character options, and one-click copy.</p>
+                            </div>
+                        </article>
+                        <!-- 2: Drawing App -->
+                        <article class="project-card reveal" data-cat="ui" data-delay="3">
+                            <div class="project-thumb th-3">
+                                <i class="fas fa-paint-brush"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://drawingaapp.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="2">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">Canvas</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                                <h3 class="project-title">Drawing App</h3>
+                                <p class="project-desc">Browser-based drawing canvas with brush size, color picker, eraser, and save-to-image.</p>
+                            </div>
+                        </article>
+                        <!-- 3: GitHub Profile Finder -->
+                        <article class="project-card reveal" data-cat="web" data-delay="4">
+                            <div class="project-thumb th-4">
+                                <i class="fab fa-github"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://gitsprofiles.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="3">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">GitHub API</span>
+                                </div>
+                                <h3 class="project-title">GitHub Profile Finder</h3>
+                                <p class="project-desc">Search any GitHub username to see their profile, repos, followers, and following count.</p>
+                            </div>
+                        </article>
+                        <!-- 4: Movie App -->
+                        <article class="project-card reveal" data-cat="web" data-delay="5">
+                            <div class="project-thumb th-5">
+                                <i class="fas fa-film"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://moviap.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="4">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">TMDB API</span>
+                                </div>
+                                <h3 class="project-title">Movie App</h3>
+                                <p class="project-desc">Browse trending movies, search by title, and view ratings &amp; posters via TMDB API.</p>
+                            </div>
+                        </article>
+                        <!-- 5: To-Do List -->
+                        <article class="project-card reveal" data-cat="tool" data-delay="6">
+                            <div class="project-thumb th-6">
+                                <i class="fas fa-tasks"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://todolap.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="5">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                    <span class="tag">localStorage</span>
+                                </div>
+                                <h3 class="project-title">To-Do List</h3>
+                                <p class="project-desc">Task manager with add, complete, delete, and localStorage persistence across sessions.</p>
+                            </div>
+                        </article>
+                        <!-- 6: Tic Tac Game -->
+                        <article class="project-card reveal" data-cat="game" data-delay="1">
+                            <div class="project-thumb th-7">
+                                <i class="fas fa-times"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://tictocgam.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="6">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                                <h3 class="project-title">Tic Tac Game</h3>
+                                <p class="project-desc">Two-player Tic Tac Toe with win/draw detection, score tracking, and a restart button.</p>
+                            </div>
+                        </article>
+                        <!-- 7: Restaurant App -->
+                        <article class="project-card reveal" data-cat="ui" data-delay="2">
+                            <div class="project-thumb th-8">
+                                <i class="fas fa-utensils"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://resturant1232.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="7">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                                <h3 class="project-title">Restaurant App</h3>
+                                <p class="project-desc">Restaurant landing with menu display, category filtering, and a dynamic cart system.</p>
+                            </div>
+                        </article>
+                        <!-- 8: Notes App -->
+                        <article class="project-card reveal" data-cat="tool" data-delay="3">
+                            <div class="project-thumb th-9">
+                                <i class="fas fa-sticky-note"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://notesaap.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="8">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                    <span class="tag">localStorage</span>
+                                </div>
+                                <h3 class="project-title">Notes App</h3>
+                                <p class="project-desc">Minimal note-taking with create, edit, delete, search, and localStorage persistence.</p>
+                            </div>
+                        </article>
+                        <!-- 9: Countdown Timer -->
+                        <article class="project-card reveal" data-cat="tool" data-delay="4">
+                            <div class="project-thumb th-10">
+                                <i class="fas fa-hourglass-half"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://minhbd.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="9">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                                <h3 class="project-title">Countdown Timer</h3>
+                                <p class="project-desc">Custom timer with start, pause, reset, SVG progress ring, and audio alert on completion.</p>
+                            </div>
+                        </article>
+                        <!-- 10: Guess Number -->
+                        <article class="project-card reveal" data-cat="game" data-delay="5">
+                            <div class="project-thumb th-11">
+                                <i class="fas fa-dice"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://guessnomber.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="10">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                                <h3 class="project-title">Guess Number App</h3>
+                                <p class="project-desc">Number guessing game with high/low hints and attempt tracking until you guess correctly.</p>
+                            </div>
+                        </article>
+                        <!-- 11: Login Page -->
+                        <article class="project-card reveal" data-cat="ui" data-delay="6">
+                            <div class="project-thumb th-12">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://signuppa.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="11">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                                <h3 class="project-title">Login Page</h3>
+                                <p class="project-desc">Sleek login/signup UI with form validation, password toggle, and smooth animated transitions.</p>
+                            </div>
+                        </article>
+                        <!-- 12: QuasarUI -->
+                        <article class="project-card reveal" data-cat="ui" data-delay="7">
+                            <div class="project-thumb th-13">
+                                <i class="fas fa-layer-group"></i>
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://quasar123.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="proj-btn proj-btn-live"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i> Live
+                                    </a>
+                                    <button class="proj-btn proj-btn-code open-modal" data-id="12">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="proj-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JS</span>
+                                </div>
+                                <h3 class="project-title">QuasarUI</h3>
+                                <p class="project-desc">Modern UI component showcase with clean design patterns, card components, and polished interactions.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <!-- GitHub CTA -->
+            <div style="background:var(--bg-2);padding:60px 0;text-align:center;">
+                <div class="container">
+                    <p class="section-eyebrow reveal">Open Source</p>
+                    <h2 class="section-title reveal" style="margin-bottom:1rem;">All on
+                        <em>GitHub</em>
+                    </h2>
+                    <p class="section-desc reveal" style="margin-bottom:2rem;">Every project above is open source. Browse the code, fork it, or just explore.</p>
+                    <a
+                        href="https://github.com/muhammadibrahem"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn-primary reveal"
+                    >
+                        <i class="fab fa-github"></i>
+                        Visit GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- PROJECT MODAL -->
+        <div
+            id="project-modal"
+            class="modal-bg"
+            role="dialog"
+            aria-modal="true"
+            aria-hidden="true"
+        >
+            <div class="modal-box">
+                <button class="modal-close" id="modal-close" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-thumb" id="modal-thumb"></div>
+                <div class="modal-body">
+                    <h3 class="modal-title" id="modal-title"></h3>
+                    <p class="modal-desc" id="modal-desc"></p>
+                    <div class="modal-tags" id="modal-tags"></div>
+                    <div class="modal-features" id="modal-feats"></div>
+                    <div class="modal-actions">
+                        <a
+                            href="#"
+                            class="btn-primary"
+                            id="modal-live"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a
+                            href="https://github.com/muhammadibrahem"
+                            class="btn-outline"
+                            id="modal-code"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-logo">MI</div>
+                <p class="footer-tagline">Crafting the web, one project at a time.</p>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a
+                        href="https://github.com/muhammadibrahem"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="GitHub"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muibraheem662@gmail.com" target="_blank" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="footer-copy">© 2026 Muhammad Ibrahim. Built with HTML, CSS &amp; JavaScript.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
