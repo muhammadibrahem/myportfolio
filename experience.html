@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Experience & Education of Muhammad Ibrahim — CS student and frontend developer.">
+        <meta name="description" content="Education and project experience of Muhammad Ibrahim, a Computer Science student and frontend developer.">
+        <meta name="author" content="Muhammad Ibrahim">
         <title>Experience — Muhammad Ibrahim</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,262 +13,175 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button id="back-to-top" aria-label="Back to top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        <header id="navbar">
-            <nav class="nav-inner">
-                <a href="index.html" class="nav-logo">MI</a>
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                    <li>
-                        <a href="skills.html" class="nav-link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="nav-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="experience.html" class="nav-link">Experience</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact" class="nav-link">Contact</a>
-                    </li>
+        <div id="preloader" aria-hidden="true">
+            <div class="preloader-inner">
+                <div class="preloader-logo">MI</div>
+                <div class="preloader-bar"><div class="preloader-fill"></div></div>
+                <div class="preloader-text">Loading Experience…</div>
+            </div>
+        </div>
+        <div id="cursor" aria-hidden="true"></div>
+        <div id="cursor-follower" aria-hidden="true"></div>
+        <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+        <header id="navbar" role="banner">
+            <nav class="nav-container" aria-label="Main navigation">
+                <a href="index.html" class="nav-logo" aria-label="Muhammad Ibrahim Home">MI</a>
+                <ul class="nav-links" role="list">
+                    <li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="skills.html" class="nav-link">Skills</a></li>
+<li><a href="projects.html" class="nav-link">Projects</a></li>
+<li><a href="experience.html" class="nav-link active">Experience</a></li>
+<li><a href="awards.html" class="nav-link">Awards</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+
                 </ul>
-                <div class="nav-right">
-                    <button id="theme-toggle" aria-label="Toggle theme">
-                        <i id="theme-icon" class="fas fa-sun"></i>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                        <i class="fas fa-moon" id="theme-icon"></i>
                     </button>
-                    <a href="index.html#contact" class="btn-hire">Hire Me</a>
-                    <button
-                        class="hamburger"
-                        id="hamburger"
-                        aria-label="Menu"
-                        aria-expanded="false"
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <a href="contact.html" class="btn-hire" aria-label="Hire Me">Hire Me</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
                     </button>
                 </div>
             </nav>
-            <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
                 <ul>
-                    <li>
-                        <a href="index.html" class="mobile-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="mobile-link">About</a>
-                    </li>
-                    <li>
-                        <a href="skills.html" class="mobile-link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="mobile-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="experience.html" class="mobile-link active">Experience</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact" class="mobile-link">Contact</a>
-                    </li>
+                    <li><a href="about.html" class="mobile-link">About</a></li>
+<li><a href="skills.html" class="mobile-link">Skills</a></li>
+<li><a href="projects.html" class="mobile-link">Projects</a></li>
+<li><a href="experience.html" class="mobile-link">Experience</a></li>
+<li><a href="awards.html" class="mobile-link">Awards</a></li>
+<li><a href="contact.html" class="mobile-link">Contact</a></li>
+
                 </ul>
             </div>
         </header>
         <main>
-            <!-- PAGE HEADER -->
-            <div class="page-header" style="background:var(--bg-2);">
+            <section id="experience" aria-labelledby="exp-heading" style="padding-top:150px">
                 <div class="container">
-                    <p class="section-eyebrow reveal">Journey</p>
-                    <h1 class="section-title reveal">Education
-                        <em>&amp;</em> Learning
-                    </h1>
-                    <p class="section-desc reveal">My academic path, the courses I've completed, and the projects that shaped my skills.</p>
-                </div>
-                <div style="position:absolute;top:-10%;right:-5%;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(139,111,212,0.14),transparent 70%);filter:blur(60px);pointer-events:none;" aria-hidden="true"></div>
-            </div>
-            <!-- TIMELINE -->
-            <div class="exp-wrap" style="background:var(--bg);padding-top:70px;">
-                <div class="container">
+                    <div class="section-label reveal">Journey</div>
+                    <h2 id="exp-heading" class="section-title reveal">Experience <em>&amp;</em> Education</h2>
                     <div class="timeline">
-                        <!-- Current: University -->
-                        <div class="tl-item reveal" data-side="left">
-                            <div class="tl-dot" aria-hidden="true"></div>
-                            <div class="tl-card">
-                                <div class="tl-meta">
-                                    <span class="tl-date">2023 — Present</span>
-                                    <span class="tl-badge edu">Education</span>
+                        <div class="timeline-item reveal" data-side="left">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2024 — 2028</span>
+                                    <span class="timeline-badge edu">Education</span>
                                 </div>
-                                <h3>BS Computer Science</h3>
-                                <h4>University — 4th Semester</h4>
-                                <p>Currently pursuing a Bachelor's in Computer Science. Completed 4 semesters with focus on programming fundamentals, data structures, OOP, and web technologies.</p>
-                                <ul class="tl-list">
-                                    <li>Courses: Programming Fundamentals, OOP, Data Structures, Calculus, Discrete Math</li>
-                                    <li>Applying CS concepts directly into real frontend projects</li>
+                                <h3>BSc Computer Science</h3>
+                                <h4>University of Education, Lahore — currently in 4th semester</h4>
+                                <p>Building a foundation in programming, data structures, and web fundamentals, with a strong focus on frontend development on the side.</p>
+                                <ul class="timeline-achievements">
+                                    <li>Active member of the university web development club</li>
+                                    <li>Consistently maintains strong academic standing</li>
                                 </ul>
                             </div>
                         </div>
-                        <!-- Self-learning: JavaScript -->
-                        <div class="tl-item reveal" data-side="right">
-                            <div class="tl-dot" aria-hidden="true"></div>
-                            <div class="tl-card">
-                                <div class="tl-meta">
-                                    <span class="tl-date">2024</span>
-                                    <span class="tl-badge course">Self Learning</span>
+                        <div class="timeline-item reveal" data-side="right">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2023 — Present</span>
+                                    <span class="timeline-badge work">Self-Directed</span>
                                 </div>
-                                <h3>JavaScript — Deep Dive</h3>
-                                <h4>Online Courses &amp; Documentation</h4>
-                                <p>Went beyond the basics of JavaScript — studied DOM manipulation, ES6+ features, Fetch API, Promises, localStorage, and the Canvas API through structured online learning.</p>
-                                <ul class="tl-list">
-                                    <li>Built 13+ projects to solidify JS concepts</li>
-                                    <li>Learned asynchronous JS and REST API integration</li>
+                                <h3>Independent Frontend Developer</h3>
+                                <h4>Personal &amp; open-source projects</h4>
+                                <p>Learning by building — 12 real, working projects covering APIs, canvas, forms, and interactive UI, using nothing but HTML, CSS, and JavaScript.</p>
+                                <ul class="timeline-achievements">
+                                    <li>Shipped and deployed multiple live apps (weather, drawing, password tools)</li>
+                                    <li>Integrated third-party APIs (OpenWeather, GitHub, TMDB)</li>
                                 </ul>
                             </div>
                         </div>
-                        <!-- Self-learning: HTML & CSS -->
-                        <div class="tl-item reveal" data-side="left">
-                            <div class="tl-dot" aria-hidden="true"></div>
-                            <div class="tl-card">
-                                <div class="tl-meta">
-                                    <span class="tl-date">2023</span>
-                                    <span class="tl-badge course">Self Learning</span>
+                        <div class="timeline-item reveal" data-side="left">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">Ongoing</span>
+                                    <span class="timeline-badge intern">Goal</span>
                                 </div>
-                                <h3>HTML5 &amp; CSS3 Mastery</h3>
-                                <h4>Online Resources &amp; Practice</h4>
-                                <p>Learned semantic HTML, CSS Flexbox, CSS Grid, animations, transitions, responsive design, and mobile-first development through hands-on building.</p>
-                                <ul class="tl-list">
-                                    <li>Built responsive layouts from scratch</li>
-                                    <li>Mastered CSS variables, transitions, and custom animations</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- ReactJS Learning -->
-                        <div class="tl-item reveal" data-side="right">
-                            <div class="tl-dot" aria-hidden="true"></div>
-                            <div class="tl-card">
-                                <div class="tl-meta">
-                                    <span class="tl-date">2025 — Present</span>
-                                    <span class="tl-badge course">Learning</span>
-                                </div>
-                                <h3>ReactJS — In Progress</h3>
-                                <h4>Structured Online Learning</h4>
-                                <p>Currently learning React fundamentals — components, props, state, hooks (useState, useEffect), and how to structure component-based UIs for larger applications.</p>
-                                <ul class="tl-list">
-                                    <li>Studying component lifecycles and hooks</li>
-                                    <li>Building small React apps for practice</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Project milestone -->
-                        <div class="tl-item reveal" data-side="left">
-                            <div class="tl-dot" aria-hidden="true"></div>
-                            <div class="tl-card">
-                                <div class="tl-meta">
-                                    <span class="tl-date">2023 — 2025</span>
-                                    <span class="tl-badge build">Building</span>
-                                </div>
-                                <h3>13+ Projects Launched</h3>
-                                <h4>Netlify — Live Deployments</h4>
-                                <p>Deployed 13 fully functional web projects on Netlify — covering weather apps, games, tools, UI components, and API integrations. Every project solved a real problem.</p>
-                                <ul class="tl-list">
-                                    <li>All projects live and publicly accessible</li>
-                                    <li>Source code open on GitHub</li>
-                                    <li>Stack: HTML · CSS · JavaScript · REST APIs</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Git & Deployment -->
-                        <div class="tl-item reveal" data-side="right">
-                            <div class="tl-dot" aria-hidden="true"></div>
-                            <div class="tl-card">
-                                <div class="tl-meta">
-                                    <span class="tl-date">2024</span>
-                                    <span class="tl-badge course">Tools</span>
-                                </div>
-                                <h3>Git, GitHub &amp; Deployment</h3>
-                                <h4>Version Control &amp; Netlify</h4>
-                                <p>Learned Git version control, branching, and GitHub collaboration workflow. Set up continuous deployment using Netlify for all project launches.</p>
-                                <ul class="tl-list">
-                                    <li>Git init → commit → push workflow</li>
-                                    <li>Netlify auto-deploy from GitHub</li>
+                                <h3>Seeking Internship / Junior Role</h3>
+                                <h4>Open to remote or on-site opportunities</h4>
+                                <p>Looking to apply my HTML/CSS/JavaScript foundation on a real team, learn from experienced developers, and grow into React and full-stack work.</p>
+                                <ul class="timeline-achievements">
+                                    <li>Comfortable with Git &amp; GitHub workflows</li>
+                                    <li>Quick learner, reliable, and easy to communicate with</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- WHAT'S NEXT -->
-            <div style="background:var(--bg-2);padding:60px 0;">
-                <div class="container">
-                    <p class="section-eyebrow reveal" style="text-align:center;">What's Next</p>
-                    <h2 class="section-title reveal" style="text-align:center;margin-bottom:2.5rem;">The Road
-                        <em>Ahead</em>
-                    </h2>
-                    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.2rem;">
-                        <div class="qnav-card reveal" data-delay="1">
-                            <div class="qnav-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <h3>React Mastery</h3>
-                            <p>Complete React learning path including advanced hooks, context, and state management.</p>
-                        </div>
-                        <div class="qnav-card reveal" data-delay="2">
-                            <div class="qnav-icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <h3>Backend Basics</h3>
-                            <p>Learn Node.js and Express to start building full-stack applications independently.</p>
-                        </div>
-                        <div class="qnav-card reveal" data-delay="3">
-                            <div class="qnav-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <h3>First Internship</h3>
-                            <p>Secure a frontend developer internship to get real-world professional experience.</p>
-                        </div>
-                        <div class="qnav-card reveal" data-delay="4">
-                            <div class="qnav-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h3>Degree Completion</h3>
-                            <p>Complete my BS in Computer Science with strong academic and practical results.</p>
+            </section>
+            <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-box">
+                    <button class="modal-close" id="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+                    <div class="modal-img-wrap"><div class="modal-img-ph" id="modal-icon"><i class="fas fa-globe"></i></div></div>
+                    <div class="modal-content">
+                        <h3 id="modal-title" class="modal-title"></h3>
+                        <p id="modal-desc" class="modal-desc"></p>
+                        <div id="modal-tags" class="modal-tags"></div>
+                        <div id="modal-features" class="modal-features"></div>
+                        <div class="modal-actions">
+                            <a href="#" class="btn-primary" id="modal-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn-outline" id="modal-code"><i class="fab fa-github"></i> Source Code</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="testimonials-slider" role="region" aria-label="Testimonials" style="display:none" aria-hidden="true">
+                
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-card" role="article">
+                        <p class="testimonial-text">placeholder</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="slider-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="slider-dots" role="tablist"></div>
+                    <button class="slider-btn" id="slider-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+            <form class="contact-form" id="contact-form" novalidate aria-label="Contact form" style="display:none" aria-hidden="true">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Project inquiry">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-full" aria-label="Send message">Send Message <i class="fas fa-paper-plane"></i></button>
+                <div class="form-success" id="form-success" role="alert" aria-live="polite">
+                    <i class="fas fa-check-circle"></i> Message sent! I'll be in touch soon.
+                </div>
+            </form>
         </main>
-        <footer>
-            <div class="footer-inner">
+        <footer id="footer" role="contentinfo">
+            <div class="footer-container">
                 <div class="footer-logo">MI</div>
-                <p class="footer-tagline">Crafting the web, one project at a time.</p>
+                <p class="footer-tagline">Crafting the web, one pixel at a time.</p>
                 <div class="footer-links">
                     <a href="about.html">About</a>
                     <a href="skills.html">Skills</a>
                     <a href="projects.html">Projects</a>
-                    <a href="experience.html">Experience</a>
-                    <a href="index.html#contact">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="footer-social">
-                    <a
-                        href="https://github.com/muhammadibrahem"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="GitHub"
-                    >
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muibraheem662@gmail.com" target="_blank" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <a href="https://github.com/muhammadibrahem" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-ibrahim-3a3673318/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p class="footer-copy">© 2026 Muhammad Ibrahim. Built with HTML, CSS &amp; JavaScript.</p>
+                <p class="footer-copy">© 2026 Muhammad Ibrahim. All rights reserved. Built with pure HTML, CSS &amp; JS.</p>
             </div>
         </footer>
         <script src="script.js"></script>

@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="About Muhammad Ibrahim — CS student, frontend developer, and lifelong learner.">
+        <meta name="description" content="About Muhammad Ibrahim — frontend developer and Computer Science student in Lahore, Pakistan.">
+        <meta name="author" content="Muhammad Ibrahim">
         <title>About — Muhammad Ibrahim</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,214 +13,156 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button id="back-to-top" aria-label="Back to top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        <header id="navbar">
-            <nav class="nav-inner">
-                <a href="index.html" class="nav-logo">MI</a>
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                    <li>
-                        <a href="skills.html" class="nav-link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="nav-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="experience.html" class="nav-link">Experience</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact" class="nav-link">Contact</a>
-                    </li>
+        <div id="preloader" aria-hidden="true">
+            <div class="preloader-inner">
+                <div class="preloader-logo">MI</div>
+                <div class="preloader-bar"><div class="preloader-fill"></div></div>
+                <div class="preloader-text">Loading Experience…</div>
+            </div>
+        </div>
+        <div id="cursor" aria-hidden="true"></div>
+        <div id="cursor-follower" aria-hidden="true"></div>
+        <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+        <header id="navbar" role="banner">
+            <nav class="nav-container" aria-label="Main navigation">
+                <a href="index.html" class="nav-logo" aria-label="Muhammad Ibrahim Home">MI</a>
+                <ul class="nav-links" role="list">
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+<li><a href="skills.html" class="nav-link">Skills</a></li>
+<li><a href="projects.html" class="nav-link">Projects</a></li>
+<li><a href="experience.html" class="nav-link">Experience</a></li>
+<li><a href="awards.html" class="nav-link">Awards</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+
                 </ul>
-                <div class="nav-right">
-                    <button id="theme-toggle" aria-label="Toggle theme">
-                        <i id="theme-icon" class="fas fa-sun"></i>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                        <i class="fas fa-moon" id="theme-icon"></i>
                     </button>
-                    <a href="index.html#contact" class="btn-hire">Hire Me</a>
-                    <button
-                        class="hamburger"
-                        id="hamburger"
-                        aria-label="Menu"
-                        aria-expanded="false"
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <a href="contact.html" class="btn-hire" aria-label="Hire Me">Hire Me</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
                     </button>
                 </div>
             </nav>
-            <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
                 <ul>
-                    <li>
-                        <a href="index.html" class="mobile-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="mobile-link active">About</a>
-                    </li>
-                    <li>
-                        <a href="skills.html" class="mobile-link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="mobile-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="experience.html" class="mobile-link">Experience</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact" class="mobile-link">Contact</a>
-                    </li>
+                    <li><a href="about.html" class="mobile-link">About</a></li>
+<li><a href="skills.html" class="mobile-link">Skills</a></li>
+<li><a href="projects.html" class="mobile-link">Projects</a></li>
+<li><a href="experience.html" class="mobile-link">Experience</a></li>
+<li><a href="awards.html" class="mobile-link">Awards</a></li>
+<li><a href="contact.html" class="mobile-link">Contact</a></li>
+
                 </ul>
             </div>
         </header>
         <main>
-            <!-- PAGE HEADER -->
-            <div class="page-header" style="background:var(--bg-2);">
+            <section id="about" aria-labelledby="about-heading" style="padding-top:150px">
                 <div class="container">
-                    <p class="section-eyebrow reveal">About Me</p>
-                    <h1 class="section-title reveal">The Story
-                        <em>Behind</em> the Code
-                    </h1>
-                    <p class="section-desc reveal">A passionate CS student from Lahore, building real projects and learning every single day.</p>
-                </div>
-                <!-- subtle orbs -->
-                <div style="position:absolute;top:-10%;right:-5%;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(201,169,110,0.12),transparent 70%);filter:blur(60px);pointer-events:none;" aria-hidden="true"></div>
-                <div style="position:absolute;bottom:-10%;left:-5%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(139,111,212,0.12),transparent 70%);filter:blur(60px);pointer-events:none;" aria-hidden="true"></div>
-            </div>
-            <!-- ABOUT CONTENT -->
-            <div class="about-wrap" style="background:var(--bg);">
-                <div class="container">
+                    <div class="section-label reveal">About Me</div>
+                    <h2 id="about-heading" class="section-title reveal">
+                        The Story
+                        <em>Behind</em>
+                        the Code
+                    </h2>
                     <div class="about-grid">
-                        <!-- Image column -->
-                        <div class="about-img-col reveal">
+                        <div class="about-image-col reveal">
                             <div class="about-img-frame">
-                                <img
-                                    src="photo.png"
-                                    alt="Muhammad Ibrahim"
-                                    class="about-photo"
-                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-                                >
-                                <div class="about-photo-placeholder" style="display:none">
-                                    <i class="fas fa-user"></i>
-                                </div>
+                                <img src="photo.jpeg" alt="Muhammad Ibrahim portrait" class="about-photo" loading="lazy"
+                                    onerror="this.style.display='none';this.parentElement.querySelector('.about-photo-ph').style.display='flex'">
+                                <div class="about-photo-ph" style="display:none"><i class="fas fa-user"></i></div>
                                 <div class="about-img-accent" aria-hidden="true"></div>
                             </div>
-                            <div class="about-chips">
-                                <span class="chip">
-                                    <i class="fas fa-map-marker-alt"></i> Lahore, Pakistan
-                                </span>
-                                <span class="chip">
-                                    <i class="fas fa-graduation-cap"></i> CS — 4th Semester
-                                </span>
-                                <span class="chip">
-                                    <i class="fas fa-briefcase"></i> Open to Remote
-                                </span>
-                                <span class="chip">
-                                    <i class="fab fa-github"></i> muhammadibrahem
-                                </span>
+                            <div class="about-quick-info">
+                                <div class="info-chip"><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</div>
+                                <div class="info-chip"><i class="fas fa-briefcase"></i> Open to Remote</div>
+                                <div class="info-chip"><i class="fas fa-graduation-cap"></i> CS — 4th Semester</div>
                             </div>
                         </div>
-                        <!-- Text column -->
                         <div class="about-text-col">
                             <p class="about-intro reveal">
-                                Hi, I'm
-                                <strong>Muhammad Ibrahim</strong>
-                                — a frontend developer who believes the best way to learn is to build.
+                                Hi, I'm <strong>Muhammad Ibrahim</strong> — a passionate frontend developer who turns ideas into beautiful, functional web experiences.
                             </p>
-                            <p class="about-body reveal">
-                                I'm currently in my 4th semester of Computer Science, and I've spent that time doing something concrete: building over 13 real projects. From a weather app to a drawing canvas, from a movie finder to a full restaurant UI — every project has been a lesson in disguise.
-                            </p>
-                            <p class="about-body reveal">
-                                My core stack is the fundamental trio: HTML, CSS, and JavaScript. I'm a firm believer that you need to deeply understand the foundations before layering on frameworks. That's why I spend time mastering the basics — DOM manipulation, the Fetch API, Canvas, localStorage — before reaching for libraries.
-                            </p>
-                            <p class="about-body reveal">
-                                I'm currently expanding into ReactJS and learning how to structure larger applications. My goal is to become a well-rounded frontend developer who can take a design from concept to a fast, accessible, responsive reality.
-                            </p>
-                            <p class="about-body reveal">
-                                Beyond code, I'm curious by nature. I enjoy exploring UI design, reading about web performance, and occasionally breaking things just to understand how they work. If you have a project or opportunity, I'd love to connect.
-                            </p>
+                            <p class="about-body reveal">I'm currently in my 4th semester of Computer Science, and I've spent that time building real projects — not just studying. From weather apps and drawing tools to movie finders and restaurant UIs, I love learning by doing.</p>
+                            <p class="about-body reveal">My stack is the classic trio: HTML, CSS, and JavaScript. I believe you should master the fundamentals before anything else, and that's exactly what I'm doing — one project at a time.</p>
+                            <p class="about-body reveal">I'm always looking to improve, collaborate, and take on new challenges. If you have an idea or opportunity, let's talk.</p>
                             <div class="about-cta reveal">
-                                <a href="projects.html" class="btn-primary">See My Projects
-                                    <i class="fas fa-arrow-right"></i>
-                                </a>
-                                <a href="index.html#contact" class="btn-ghost">Get in Touch
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
+                                <a href="contact.html" class="btn-primary">Let's Connect <i class="fas fa-arrow-right"></i></a>
+                                <a href="projects.html" class="btn-text">See My Work <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- QUICK FACTS STRIP -->
-            <div style="background:var(--bg-2); padding:60px 0;">
-                <div class="container">
-                    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.25rem;">
-                        <div class="qnav-card reveal" data-delay="1" style="text-align:center;align-items:center;">
-                            <div class="qnav-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h3 style="font-size:1.7rem;font-family:'Cormorant Garamond',serif;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">13+</h3>
-                            <p>Projects Built</p>
-                        </div>
-                        <div class="qnav-card reveal" data-delay="2" style="text-align:center;align-items:center;">
-                            <div class="qnav-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h3 style="font-size:1.7rem;font-family:'Cormorant Garamond',serif;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">4th</h3>
-                            <p>Semester of CS</p>
-                        </div>
-                        <div class="qnav-card reveal" data-delay="3" style="text-align:center;align-items:center;">
-                            <div class="qnav-icon">
-                                <i class="fas fa-tools"></i>
-                            </div>
-                            <h3 style="font-size:1.7rem;font-family:'Cormorant Garamond',serif;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">3+</h3>
-                            <p>Core Technologies</p>
-                        </div>
-                        <div class="qnav-card reveal" data-delay="4" style="text-align:center;align-items:center;">
-                            <div class="qnav-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <h3 style="font-size:1.7rem;font-family:'Cormorant Garamond',serif;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Open</h3>
-                            <p>Source on GitHub</p>
+            </section>
+            <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-box">
+                    <button class="modal-close" id="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+                    <div class="modal-img-wrap"><div class="modal-img-ph" id="modal-icon"><i class="fas fa-globe"></i></div></div>
+                    <div class="modal-content">
+                        <h3 id="modal-title" class="modal-title"></h3>
+                        <p id="modal-desc" class="modal-desc"></p>
+                        <div id="modal-tags" class="modal-tags"></div>
+                        <div id="modal-features" class="modal-features"></div>
+                        <div class="modal-actions">
+                            <a href="#" class="btn-primary" id="modal-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn-outline" id="modal-code"><i class="fab fa-github"></i> Source Code</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="testimonials-slider" role="region" aria-label="Testimonials" style="display:none" aria-hidden="true">
+                
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-card" role="article">
+                        <p class="testimonial-text">placeholder</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="slider-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="slider-dots" role="tablist"></div>
+                    <button class="slider-btn" id="slider-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+            <form class="contact-form" id="contact-form" novalidate aria-label="Contact form" style="display:none" aria-hidden="true">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Project inquiry">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-full" aria-label="Send message">Send Message <i class="fas fa-paper-plane"></i></button>
+                <div class="form-success" id="form-success" role="alert" aria-live="polite">
+                    <i class="fas fa-check-circle"></i> Message sent! I'll be in touch soon.
+                </div>
+            </form>
         </main>
-        <footer>
-            <div class="footer-inner">
+        <footer id="footer" role="contentinfo">
+            <div class="footer-container">
                 <div class="footer-logo">MI</div>
-                <p class="footer-tagline">Crafting the web, one project at a time.</p>
+                <p class="footer-tagline">Crafting the web, one pixel at a time.</p>
                 <div class="footer-links">
                     <a href="about.html">About</a>
                     <a href="skills.html">Skills</a>
                     <a href="projects.html">Projects</a>
-                    <a href="experience.html">Experience</a>
-                    <a href="index.html#contact">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="footer-social">
-                    <a
-                        href="https://github.com/muhammadibrahem"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="GitHub"
-                    >
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muibraheem662@gmail.com" target="_blank" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <a href="https://github.com/muhammadibrahem" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-ibrahim-3a3673318/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p class="footer-copy">© 2026 Muhammad Ibrahim. Built with HTML, CSS &amp; JavaScript.</p>
+                <p class="footer-copy">© 2026 Muhammad Ibrahim. All rights reserved. Built with pure HTML, CSS &amp; JS.</p>
             </div>
         </footer>
         <script src="script.js"></script>
