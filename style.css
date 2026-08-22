@@ -2144,6 +2144,10 @@ a.contact-item:hover .contact-item-icon {
         display: none;
     }
 
+    .nav-actions {
+        margin-left: auto;
+    }
+
     .hamburger {
         display: flex;
     }
